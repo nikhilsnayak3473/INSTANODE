@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const mongoose = require('mongoose');
+const connectDB = require('./helpers/db');
 
 dotenv.config();
 
@@ -13,16 +13,7 @@ app.use(express.json());
 app.use('/api/user', require('./routes/user'));
 
 //DataBase
-mongoose
-  .connect(process.env.DATABASE_URL, {
-    useNewUrlParser: true,
-  })
-  .then(() => {
-    console.log('MongoDB connected Sucessfully');
-  })
-  .catch((err) => {
-    console.log('Error connecting to MongoDB', err);
-  });
+connectDB(process.env.DATABASE_URL);
 
 app.listen(PORT, (error) => {
   if (error) {

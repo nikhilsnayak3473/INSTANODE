@@ -14,7 +14,7 @@ const userSchema = mongoose.Schema(
       trim: true,
       text: true,
     },
-    user_name: {
+    username: {
       type: String,
       required: [true, 'user name is required'],
       trim: true,
@@ -53,12 +53,12 @@ const userSchema = mongoose.Schema(
       required: true,
       trim: true,
     },
-    bDay: {
+    bDate: {
       type: Number,
       required: true,
       trim: true,
     },
-    verifired: {
+    verified: {
       type: Boolean,
       default: false,
     },

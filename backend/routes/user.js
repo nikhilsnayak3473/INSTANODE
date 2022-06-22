@@ -1,12 +1,16 @@
 const express = require('express');
+const { registerUser, activateUser } = require('../controllers/user');
 
 const router = express.Router();
 
-//@route GET /api/user
-//desc test route
-//access Public
-router.get('/', (req, res) => {
-  res.send('inside user route');
-});
+//@route POST /api/user/register
+//desc Register User
+//@access Public
+router.post('/register', registerUser);
+
+//@route POST /api/user/activate
+//desc Register User
+//@access Public
+router.post('/activate', activateUser);
 
 module.exports = router;
