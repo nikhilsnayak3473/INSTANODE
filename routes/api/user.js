@@ -23,6 +23,10 @@ router.post(
       min: 3,
       max: 20,
     }),
+    body('bDate', 'Birth Date is Required').not().isEmpty(),
+    body('bMonth', 'Birth Month is Required').not().isEmpty(),
+    body('bYear', 'Birth Year is Required').not().isEmpty(),
+    body('gender', 'Gender is Required').not().isEmpty(),
   ],
   registerUser
 );

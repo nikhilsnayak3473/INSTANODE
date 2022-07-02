@@ -62,10 +62,6 @@ const userSchema = mongoose.Schema(
       type: Boolean,
       default: false,
     },
-    friends: {
-      type: Array,
-      default: [],
-    },
     following: {
       type: Array,
       default: [],
@@ -90,32 +86,7 @@ const userSchema = mongoose.Schema(
       bio: {
         type: String,
       },
-      otherName: {
-        type: String,
-      },
-      job: {
-        type: String,
-      },
-      workplace: {
-        type: String,
-      },
-      highSchool: {
-        type: String,
-      },
-      college: {
-        type: String,
-      },
-      currentCity: {
-        type: String,
-      },
-      hometown: {
-        type: String,
-      },
-      relationship: {
-        type: String,
-        enum: ['Single', 'In a relationship', 'Married', 'Divorced'],
-      },
-      instagram: {
+      website: {
         type: String,
       },
     },
