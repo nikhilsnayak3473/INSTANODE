@@ -28,6 +28,7 @@ input::placeholder {
 
 .loginButton:hover {
   color: var(--blue-color);
+  background-color: var(--light-green-color);
   cursor: pointer;
 }
 

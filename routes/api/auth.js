@@ -23,7 +23,7 @@ router.post(
   '/',
   [
     body('email', 'Please Enter a Vaild Email').isEmail(),
-    body('password', 'Password is required').exists(),
+    body('password', 'Password is required').not().isEmpty(),
   ],
   loginUser
 );

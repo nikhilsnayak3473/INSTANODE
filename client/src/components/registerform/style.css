@@ -1,0 +1,61 @@
+#registerForm,
+.registerFormWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.name,
+.gender {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.genderInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.genderInput input {
+  width: auto;
+}
+
+#registerForm input {
+  width: 100%;
+  line-height: 30px;
+  padding: 0 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin: 20px 0;
+  font-size: medium;
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+.registerButton {
+  background-color: var(--green-color);
+}
+
+.registerButton:hover {
+  color: var(--blue-color);
+  background-color: var(--light-green-color);
+  cursor: pointer;
+}
+
+.logInText {
+  margin: 10px 0;
+}
+
+.logInText button {
+  padding: 0 5px;
+  color: var(--blue-color);
+  cursor: pointer;
+  background-color: black;
+}

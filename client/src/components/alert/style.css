@@ -1,0 +1,12 @@
+#alert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #dd4646;
+  color: black;
+  font-size: larger;
+  font-weight: 800;
+}
